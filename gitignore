@@ -1,0 +1,79 @@
+# ============================================================
+# Clareza | Analise de gastos com IA
+# Nunca versione credenciais ou dados financeiros reais.
+# ============================================================
+
+# Segredos, variaveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/secrets.*
+*.pem
+*.key
+credentials*.json
+service_account*.json
+
+# Ambientes virtuais / Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Testes, qualidade e caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# Arquivos locais e sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.log
+logs/
+
+# Dados bancarios reais e arquivos gerados
+# Nao publicar extratos reais, mesmo quando anonimizados parcialmente.
+data/
+uploads/
+downloads/
+exports/
+outputs/
+output/
+reports/
+tmp/
+temp/
+*.csv
+*.pdf
+*.xlsx
+*.xls
+*.ofx
+*.qif
+*.parquet
+*.feather
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+
+# Somente exemplos sinteticos e revisados sao permitidos
+!examples/extrato_exemplo.csv
+!examples/extrato_exemplo.pdf
+!examples/nubank_cartao_exemplo.csv
